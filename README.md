@@ -20,7 +20,7 @@ python3 convert.py
 
 # Aggregation
 
-Each file has all the data up till that file's date.To extract a particular index's closing price (e.g. FTSE 100) note that each CSV has 17 lines of headers (various high and lows and their dates, as well as the closing value header). From row 18 onward the closing values are present and the index's columnar value data appears. FTSE 100 for example is the first column of data after the date and timestamp. The last 2 lines of data forms a footer
+Each file has all the data up till that file's date. To extract a particular index's closing price (e.g. FTSE 100) note that each CSV has 17 lines of headers (various high and lows and their dates, as well as the closing value header). From row 18 onward the closing values are present and the index's columnar value data appears. FTSE 100 for example is the first column of data after the date and timestamp. The last 2 lines of data forms a footer
 
 The trim.sh script removes the header and footer from a file and produces an aggregate.csv file as output.
 
@@ -30,7 +30,7 @@ The trim.sh script removes the header and footer from a file and produces an agg
 
 # ETL on FTSE 100 data
 
-Use the etl.py script (it operates on the aggregate.csv file) and provide the column number and the desired filename:
+Use the etl.sh script (it operates on the aggregate.csv file) and provide the column number and the desired filename:
 
 ```
 ./etl.sh 1 ftse100.csv
