@@ -37,3 +37,10 @@ Use the etl.sh script (it operates on the aggregate.csv file) and provide the co
 ```
 
 This outputs the desired index's closing values in the output file by cutting the date and selected column value fields from the aggregated source.
+
+# Result
+
+The analysis successfully detects two FTSE trends:
+
+- Santa Clause Rally (peak in December)
+- Sell in May and go away, don't come back till St. Leger's Day. (Peak in March/April)
